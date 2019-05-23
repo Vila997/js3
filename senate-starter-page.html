@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>4
+        $(function() {…})
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <div class="container">
+    <body class="p-3 mb-2 bg-secondary text-white">
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <a class="navbar-brand" href="#"><img width="150px" height="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/113th_United_States_Congress_Senators.svg/400px-113th_United_States_Congress_Senators.svg.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="home-starter-page.html">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Congress 113th
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="house-starter-page.html">House</a>
+                    <a class="dropdown-item" >Senate</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Attendance
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="house-attendance.html">House</a>
+                      <a class="dropdown-item" href="senate-attendance.html">Senate</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Party Loyalty
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="house-party-loyalty.html">House</a>
+                      <a class="dropdown-item" href="senate-party-loyalty">Senate</a>
+                    </div>
+                </li>
+              </ul>
+            </div>
+            <p class="text-right"><img src="https://massivamovil.com/img/images/inicio/enviar.png" width="20px" height="20px"><u><b>info@tgif.net</b></u></p>
+          </nav>
+        <!--Table container-->
+        <div class="px-5">
+          <div>          
+            <h2>Senators</h2>
+            <p>First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution. Each state is represented by two senators, regardless of population, who serve staggered six-year terms. The Senate has several exclusive powers not granted to the House, including consenting to treaties as a precondition to their ratification and consenting to or confirming appointments of Cabinet secretaries, federal judges, other federal executive officials, military officers, regulatory officials, ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached by the House.</p>
+          </div>
+          <p><u>Filter by Party:</u></p>
+          <div >
+            <label><input type="checkbox" onchange="filter()" id="dem">Democrat</label>
+            <label><input type="checkbox" onchange="filter()" id="rep">Republican</label>
+            <label><input type="checkbox" onchange="filter()" id="ind">Independent</label>
+          </div>
+          <div class="dropdownfilter">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                State
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Alabama</a>
+                <a class="dropdown-item" href="#">Alaska</a>
+                <a class="dropdown-item" href="#">Arizona</a>
+                <a class="dropdown-item" href="#">Arkansas</a>
+                <a class="dropdown-item" href="#">California</a>
+                <a class="dropdown-item" href="#">Colorado</a>
+                <a class="dropdown-item" href="#">Connecticut</a>
+                <a class="dropdown-item" href="#">Delaware</a>
+                <a class="dropdown-item" href="#">distrito de Columbia</a>
+                <a class="dropdown-item" href="#">Florida</a>
+                <a class="dropdown-item" href="#">Georgia</a>
+                <a class="dropdown-item" href="#">Hawaii</a>
+                <a class="dropdown-item" href="#">Idaho</a>
+                <a class="dropdown-item" href="#">Illinois</a>
+                <a class="dropdown-item" href="#">Indiana</a>
+                <a class="dropdown-item" href="#">Iowa</a>
+                <a class="dropdown-item" href="#">Kansas</a>
+                <a class="dropdown-item" href="#">Kentucky</a>
+                <a class="dropdown-item" href="#">Louisiana</a>
+                <a class="dropdown-item" href="#">Maine</a>
+                <a class="dropdown-item" href="#">Maryland</a>
+                <a class="dropdown-item" href="#">Massachusetts</a>
+                <a class="dropdown-item" href="#">Michigan</a>
+                <a class="dropdown-item" href="#">Minnesota</a>
+                <a class="dropdown-item" href="#">Mississippi</a>
+                <a class="dropdown-item" href="#">Missouri</a>
+                <a class="dropdown-item" href="#">Montana</a>
+                <a class="dropdown-item" href="#">Nebraska</a>
+                <a class="dropdown-item" href="#">Nevada</a>
+                <a class="dropdown-item" href="#">New Hampshire</a>
+                <a class="dropdown-item" href="#">New Jersey</a>
+                <a class="dropdown-item" href="#">New Mexico</a>
+                <a class="dropdown-item" href="#">New York</a>
+                <a class="dropdown-item" href="#">North Carolina</a>
+                <a class="dropdown-item" href="#">North Dakota</a>
+                <a class="dropdown-item" href="#">Ohio</a>
+                <a class="dropdown-item" href="#">Oklahoma</a>
+                <a class="dropdown-item" href="#">Oregon</a>
+                <a class="dropdown-item" href="#">Pennsylvania</a>
+                <a class="dropdown-item" href="#">Rhode Island</a>
+                <a class="dropdown-item" href="#">South Carolina</a>
+                <a class="dropdown-item" href="#">South Dakota</a>
+                <a class="dropdown-item" href="#">Tennessee</a>
+                <a class="dropdown-item" href="#">Texas</a>
+                <a class="dropdown-item" href="#">Utah</a>
+                <a class="dropdown-item" href="#">Vermont</a>
+                <a class="dropdown-item" href="#">Virginia</a>
+                <a class="dropdown-item" href="#">Washington</a>
+                <a class="dropdown-item" href="#">West Virginia</a>
+                <a class="dropdown-item" href="#">Wisconsin</a>
+                <a class="dropdown-item" href="#">Wyoming</a>
+
+
+
+
+              </div>
+            </div> 
+ 
+                  
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Party</th>
+                        <th>State</th>
+                        <th>Seniority</th>
+                        <th>Votes</th>
+                        
+                    </tr>
+                </thead>
+                <tbody id="tabla">
+                    
+
+                </tbody>
+            </table>
+        </div>  
+      </div>
+      <div class="navbar navbar-expand-lg navbar-light bg-info">
+        <footer class="page-footer font-small black">
+          <div class="footer-copyright text-center py-3">Oficial Web:
+            <a class="text-dark" href="https://www.whitehouse.gov/the_press_office/TransparencyandOpenGovernment"> government</a>
+          </div>
+        </footer>
+      </div>
+        
+        <table id="senate-data"></table> 
+
+
+
+
+      <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+      <script src="113Congress-Senate.js"></script>
+      <script src="tabla.js"></script> 
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+</body>
+</html>
